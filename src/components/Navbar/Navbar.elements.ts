@@ -4,7 +4,7 @@ export const NavbarItems = styled.nav`
   background: linear-gradient(90deg, rgb(110,94,254) 0%, rgba(73,63,252,1) 100%);
   height: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   font-size: 1.2rem;
 `
@@ -17,7 +17,9 @@ export const NavbarLogo = styled.h1`
 `
 
 export const MenuIcon = styled.div`
-
+display: flex;
+align-items: center;
+justify-content: center;
 `
 
 export const NavLinks = styled.a`
