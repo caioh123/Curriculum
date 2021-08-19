@@ -2,20 +2,20 @@ import {Ul, NavItem, NavLinks} from './RightNav.elements'
 import {PropsRightNav} from './types'
 
 
-export const RightNav = ({open}: PropsRightNav) => {
+export const RightNav = ({open, onClick}: PropsRightNav) => {
   return (
-    <Ul open={open}>
+    <Ul onClick={onClick} open={open}>
       <NavItem>
-        <NavLinks to="about">About Us</NavLinks>
+        <NavLinks onClick={onClick} to="about">About Us</NavLinks>
       </NavItem>
       <NavItem>
-        <NavLinks to="discover">Discover</NavLinks>
+        <NavLinks onClick={onClick} to="discover">Discover</NavLinks>
       </NavItem>
       <NavItem>
-        <NavLinks to="services">Services</NavLinks>
+        <NavLinks onClick={onClick} to="services">Services</NavLinks>
       </NavItem>
       <NavItem>
-        <NavLinks to="signup">Sign Up</NavLinks>
+        <NavLinks onClick={onClick} to="signup">Sign Up</NavLinks>
       </NavItem>
 
     </Ul>

@@ -1,3 +1,6 @@
+import React from "react";
+
 export type PropsRightNav = {
-  open: boolean
+  open: boolean,
+  onClick: any
 }

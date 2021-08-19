@@ -5,15 +5,20 @@ import {RightNav} from '../../RightNav/RightNav'
 
 export const Burger = () => {
   const [open, setOpen] =useState(false)
+
+  const toggle = () => {
+    setOpen(!open)
+  }
+
   return (
     <>
-    <StyledBurger open={open} onClick={() => setOpen(!open)}>
+    <StyledBurger open={open} onClick={() => toggle()}>
       <div />
       <div />
       <div />
 
     </StyledBurger>
-      <RightNav open={open}/>
+      <RightNav onClick={toggle} open={open}/>
       </>
   )
 }

@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import {Link as LinkR} from 'react-router-dom'
 
 export const NavbarItems = styled.nav`
-  background: linear-gradient(90deg, rgb(110,94,254) 0%, rgba(73,63,252,1) 100%);
+  background: #0c0c0c;
   height: 80px;
   display: flex;
   justify-content: space-around;
