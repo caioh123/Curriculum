@@ -1,5 +1,5 @@
 import React from 'react'
-import {HeroBg,HeroContainer, ImageBg} from './HeroSection.elements'
+import {HeroContainer, ImageBg} from './HeroSection.elements'
 
 const HeroSection = () => {
     return (
